@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -S -mac=intel $CFILE
+
