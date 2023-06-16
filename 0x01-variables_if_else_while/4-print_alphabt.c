@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 1; i < 27; i++)
 	{
-		if (i != 5 && i != 17)
+		if (i != 4 && i != 17)
 		{
 			putchar(i);
 		}
