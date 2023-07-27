@@ -2,16 +2,17 @@
 
 /**
  * _strlen - returns the length of a string
- * @q: the string that length to check
+ * @s: the string whose length to check
  *
  * Return: integer length of string
  */
-int _strlen(char *q)
+int _strlen(char *s)
 {
 	int i = 0;
-	if (!q)
+
+	if (!s)
 		return (0);
-	while (*q++)
+	while (*s++)
 		i++;
 	return (i);
 }
