@@ -13,18 +13,19 @@ void print_binary(unsigned long int n)
 	for (i = 63; i >= 0; i--)
 	{
 		d = n >> i;
+
 		if (d & 1)
 		{
 			_putchar ('1');
-			d++;
+			r++;
 		}
 
-		else if (d)
+		else if (r)
 		{
 			_putchar ('0');
 		}
 	}
 
-	if (!d)
+	if (!r)
 		_putchar ('0');
 }
