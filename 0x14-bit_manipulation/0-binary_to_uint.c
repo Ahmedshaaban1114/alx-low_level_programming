@@ -12,6 +12,7 @@ unsigned int binary_to_uint(const char *b)
 {
 
 	int i;
+	unsigned int v = 0;
 
 	if (!b)
 	{
@@ -26,9 +27,9 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 
-		i = i * 2 + (*b++ - '0');
+		v = i * 2 + (*b++ - '0');
 	}
-	return (i);
+	return (v);
 
 
 }
