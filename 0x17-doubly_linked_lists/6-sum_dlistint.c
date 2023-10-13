@@ -1,4 +1,4 @@
-#include "listi.h"
+#include "lists.h"
 
 /**
  * sun_dlistint - sums the values of a dlist
