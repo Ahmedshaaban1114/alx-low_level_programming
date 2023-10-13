@@ -1,10 +1,8 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end  - add new head node to dlist
- *
+ * add_dnodeint_end  - adds new node to end of dlist
  * @head: address of pointer to current head node
- *
  * @n: int field of new node
  *
  * Return: address of new node or NULL
@@ -30,8 +28,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		while (node->next)
 			node = node->next;
 
-	node->next = new;
-	new->prev = node;
+		node->next = new;
+		new->prev = node;
 
 	}
 	return (new);
